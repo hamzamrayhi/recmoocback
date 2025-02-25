@@ -25,24 +25,24 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use("/api/uploads", express.static("uploads"));
-app.use('/api', enumsRouter);
-app.use('/api',registerRouter);
-app.use('/api',verifyRouter);
-app.use('/api',forgetpasswordRouter)
-app.use('/api', loginRouter)
-app.use('/api',searchbarRouter)
-app.use('/api',userSettingsRouter)
-app.use('/api',coursesdisplayRouter)
-app.use('/api',reviewRouter)
-app.use('/api',categoryRouter)
-app.use('/api',contactusRouter)
-app.use('/api',adminRouter)
-app.use('/api',bookmarksRouter)
-app.use('/api',userStudyScheduleRouter)
-app.use('/api',accessibilty_checkerRouter)
-app.use('/api',toolbar_profilesRouter)
-app.use('/api', chatbotRoutes);
+app.use("/uploads", express.static("uploads"));
+app.use('/', enumsRouter);
+app.use('/',registerRouter);
+app.use('/',verifyRouter);
+app.use('/',forgetpasswordRouter)
+app.use('/', loginRouter)
+app.use('/',searchbarRouter)
+app.use('/',userSettingsRouter)
+app.use('/',coursesdisplayRouter)
+app.use('/',reviewRouter)
+app.use('/',categoryRouter)
+app.use('/',contactusRouter)
+app.use('/',adminRouter)
+app.use('/',bookmarksRouter)
+app.use('/',userStudyScheduleRouter)
+app.use('/',accessibilty_checkerRouter)
+app.use('/',toolbar_profilesRouter)
+app.use('/', chatbotRoutes);
 
 
 module.exports = app;
