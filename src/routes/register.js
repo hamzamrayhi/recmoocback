@@ -101,8 +101,8 @@ router.post('/register', (req, res) => {
                     }
 
                     const sql = `
-                        INSERT INTO users (name, email, password, age, location, user_picture, educational_qualification, field_of_study, areas_of_interest, career_goals, accessibility_features, preferred_languages, preferred_learning_style, course_format, verification_token, token_expiration, email_verified)
-                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                        INSERT INTO users (name, email, password, age, location, user_picture, educational_qualification, field_of_study, areas_of_interest, career_goals, accessibility_features, preferred_languages, preferred_learning_style, course_format, verification_token, token_expiration, email_verified,reset_pass_token)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,NULL)
                     `;
 
                     const values = [
