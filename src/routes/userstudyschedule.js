@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const db = require('../db/db');
-const cron = require('node-cron');
+/*const cron = require('node-cron');*/
 const nodemailer = require('nodemailer');
 
 // Nodemailer transporter setup
@@ -334,9 +334,10 @@ const deleteOldSchedules = (currentTime) => {
 
 
 // Schedule the task to run every minute
+/*
 cron.schedule('* * * * *', () => {
     console.log('Running study schedule check...');
     checkAndSendNotifications();
-});
+});*/
 
 module.exports = router;
