@@ -151,7 +151,7 @@ function sendVerificationEmail(email, token) {
         from: 'ridealong1.mailer@gmail.com',
         to: email,
         subject: 'Email Verification',
-        html: `<p>Please Click on the following link to activate your account <a href="http://localhost:5000/api/verify?token=${token}">Account Activation Link</a></p>`
+        html: `<p>Please Click on the following link to activate your account <a href="http://localhost:5000/verify?token=${token}">Account Activation Link</a></p>`
     };
 
     transporter.sendMail(mailOptions, function (error, info) {

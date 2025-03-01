@@ -3,7 +3,7 @@ const mysql = require('mysql');
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'your_password',
+    password: '', // Change password to "your_password" when on vps
     database: 'recmooc4all'
 });
 
