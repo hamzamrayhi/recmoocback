@@ -17,8 +17,7 @@ const userStudyScheduleRouter =require('./routes/userstudyschedule');
 const accessibilty_checkerRouter = require ('./routes/accessibility_checker');
 const toolbar_profilesRouter = require('./routes/toolbar_profiles');
 const chatbotRoutes = require('./routes/chatbot');
-
-
+const recommenderroutes = require('./routes/recommender');
 
 const app = express();
 
@@ -43,6 +42,8 @@ app.use('/',userStudyScheduleRouter)
 app.use('/',accessibilty_checkerRouter)
 app.use('/',toolbar_profilesRouter)
 app.use('/', chatbotRoutes);
+app.use('/', recommenderroutes);
+
 
 
 module.exports = app;
